@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <script>
+        function greeting(){
+            // document.getElementById('demo').innerHTML = 'Hello Onpreeya';
+            let name=prompt("Plase input your name:");
+            // document.getElementById()
+            window.alert('Hello '+name);
+            document.getElementById('demo').innerHTML = 'Hello '+name;
+        }
+        function chageToRed(name){
+            document.getElementById('demo').style.color = "red";
+            document.getElementById('demo').style.fontSize = "30px";
+        }
+        function chageToBlack(){
+            document.getElementById('pic').src="1.jpg";
+        }
+        function chageToOrange(){
+            document.getElementById('pic').src="2.jpg";
+        }
+    </script>
+</head>
+
+<h2>My First JavaScript</h2>
+
+<img id="pic" src="1.jpg"><br>
+<button type="button" onclick="greeting()">Click me to display Name</button>
+<button type="button" onclick="chageToRed()">Click me to display Chage Color</button>
+
+<button type="button" onclick="chageToBlack()">Click me to display 1</button>
+<button type="button" onclick="chageToOrange()">Click me to display 2</button>
+
+
+<p id="demo"></p>
+
+</body>
+</html> 
